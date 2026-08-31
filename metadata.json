@@ -1,0 +1,6 @@
+{
+  "name": "GrantFlow Agent",
+  "description": "AI-powered grant opportunity management agent for NGOs and non-profit organisations to extract requirements, evaluate eligibility, track deadlines, and manage proposal readiness.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
