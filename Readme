@@ -1,0 +1,78 @@
+I can see the repo does not have a README.md file visible. Click **Add file** then **Create new file**. Name it `README.md`. 
+
+Yes, let me write it for you:
+
+---
+
+```markdown
+# GrantFlow Agent
+
+AI-native grant management platform for African NGOs.
+
+## Live Demo
+
+https://grantflow-692875682594.us-central1.run.app
+
+## What It Does
+
+GrantFlow helps NGOs manage their entire grant lifecycle:
+
+- Reads registration documents and auto-populates the organisational profile
+- Analyses funding calls and assesses eligibility using the Gemini API
+- Creates proposal workspaces with milestones, tasks, and document checklists
+- Routes work through a configurable approval chain
+- Tracks institutional memory across applications
+
+## Built With
+
+- Gemini API (Google GenAI SDK)
+- Google Cloud Run
+- React 19
+- Express
+- TypeScript
+- Vite
+- Tailwind CSS
+- Resend
+
+## Setup
+
+```bash
+npm install
+npm run dev
+```
+
+Set the following environment variables in `.env`:
+
+```
+GEMINI_API_KEY=your_key
+RESEND_API_KEY=your_key
+EMAIL_FROM=your_email
+APP_URL=your_url
+```
+
+## Hackathon
+
+Built for the All Things Agentic Hackathon on Devpost.
+
+## Reproducible Testing
+
+1. Visit the live demo: https://grantflow-692875682594.us-central1.run.app
+2. Click **New Organisation Setup** and register with any email and password.
+3. Upload a plain text (.txt) registration document during onboarding. The AI will extract and populate your organisational profile.
+4. Complete the setup: add departments, then staff.
+5. Go to **Analyse Call** and paste any funding call text. Click Analyse to see eligibility assessment.
+6. Click **Pursue Opportunity** to create a workspace.
+7. Inside the workspace, open **Application Workspace** to draft sections and **Team & Assignments** to assign tasks.
+8. Use **Switch Staff Perspective** in the account menu to view the app as different team members.
+
+To run locally:
+```bash
+git clone https://github.com/dmhanmation/Grantflow.git
+cd Grantflow
+npm install
+cp .env.example .env
+# Add your GEMINI_API_KEY and other variables to .env
+npm run dev
+```
+```
+
